@@ -85,8 +85,13 @@ Rules 选择器
 
 7. AI 编辑器通常会综合多个信息来判断是否加载某个 Rule。
 
-参考：https://chatgpt.com/c/WEB:397b7a15-4b6e-454a-847a-aa708e2c8555
+    参考：https://chatgpt.com/c/WEB:397b7a15-4b6e-454a-847a-aa708e2c8555
 
 8. 大模型如何判断使用哪个 skill
 
-参考：https://chatgpt.com/g/g-p-6a4c631801b08191aea56658814b7ea8-trae/c/6a4ca4a9-af6c-83ee-b231-4a54cedb070b
+    参考：https://chatgpt.com/g/g-p-6a4c631801b08191aea56658814b7ea8-trae/c/6a4ca4a9-af6c-83ee-b231-4a54cedb070b
+
+9. openspec/config.yaml
+
+   参考：https://chatgpt.com/g/g-p-6a4c631801b08191aea56658814b7ea8-trae/c/6a4cac86-eb40-83ee-950b-9e3a51c2dfb7
+10. openspec 的使用

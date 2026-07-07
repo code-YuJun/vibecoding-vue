@@ -1,20 +1,100 @@
 schema: spec-driven
 
-# Project context (optional)
-# This is shown to AI when creating artifacts.
-# Add your tech stack, conventions, style guides, domain knowledge, etc.
-# Example:
-#   context: |
-#     Tech stack: TypeScript, React, Node.js
-#     We use conventional commits
-#     Domain: e-commerce platform
+context: |
+  # Project
 
-# Per-artifact rules (optional)
-# Add custom rules for specific artifacts.
-# Example:
-#   rules:
-#     proposal:
-#       - Keep proposals under 500 words
-#       - Always include a "Non-goals" section
-#     tasks:
-#       - Break tasks into chunks of max 2 hours
+  This is a Vue 3 frontend project.
+
+  ## Tech Stack
+
+  - Vue 3
+  - TypeScript
+  - Vite
+  - Vue Router
+  - Pinia
+  - Axios
+
+  ## Development Workflow
+
+  This project follows Spec Driven Development (SDD).
+
+  Every feature should follow this process:
+
+  Proposal
+    ↓
+  Specs
+    ↓
+  Design (when needed)
+    ↓
+  Tasks
+    ↓
+  Implementation
+
+  ## Project Principles
+
+  Before implementation:
+
+  - Understand the existing architecture.
+  - Reuse existing components whenever possible.
+  - Follow the current directory structure.
+  - Avoid introducing duplicate business logic.
+  - Minimize breaking changes.
+
+  ## API
+
+  API definitions are maintained in Apifox.
+
+  When implementing APIs:
+
+  - Prefer reading API information from Apifox MCP.
+  - Reuse existing request utilities.
+  - Follow the project's API Type Mapping rules.
+
+  ## UI
+
+  UI designs are maintained in Figma.
+
+  When implementing pages:
+
+  - Read the design through Figma MCP whenever available.
+  - Keep layout and spacing consistent with the design.
+  - Reuse existing UI components first.
+
+  ## Code Quality
+
+  Always:
+
+  - Prefer readable code over clever code.
+  - Keep components small and maintainable.
+  - Follow existing coding conventions.
+  - Generate TypeScript-friendly implementations.
+  - Avoid unnecessary abstractions.
+
+rules:
+  proposal:
+    - Clearly describe the business background.
+    - Explain why the change is needed.
+    - Identify affected modules.
+    - List risks and compatibility impacts.
+
+  specs:
+    - Define user scenarios before implementation.
+    - Include acceptance criteria.
+    - Describe API changes when applicable.
+    - Describe UI behavior when applicable.
+    - Reuse existing project patterns whenever possible.
+
+  design:
+    - Describe component structure.
+    - Explain data flow.
+    - Explain state management.
+    - Explain routing changes if any.
+    - Explain API interaction.
+    - Mention reusable components.
+
+  tasks:
+    - Break work into small independent tasks.
+    - Tasks should be implementation-oriented.
+    - Reference related specs.
+    - Include testing and validation tasks.
+    - Avoid combining multiple unrelated objectives.

@@ -1,4 +1,3 @@
-
 # 项目规范索引（Rules）
 
 本目录包含本项目的开发规范（Rules），按模块进行分类组织，便于开发过程中快速查阅。
@@ -160,6 +159,13 @@ Pinia 状态管理规范。
 - ESLint
 - 构建检查
 - 测试要求
+
+## Rule Selection
+
+不同规则适用于不同开发场景。
+
+- 日常前端开发应遵循 Vue、TypeScript、API 等基础规范。
+- 当通过 Apifox MCP 获取接口 Schema 并生成 TypeScript 类型时，应参考 `Apifox-TypeMapping.md`。
 
 ---
 
