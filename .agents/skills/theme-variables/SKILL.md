@@ -1,6 +1,6 @@
 ---
 name: theme-variables
-description: >
+description:
   指导 AI 在 Vue3 + Element Plus 项目中正确使用主题变量编写样式。
   当新增或修改组件、页面、布局或 Element Plus 样式时，优先使用
   Element Plus CSS Variables 和项目自定义 CSS Variables，避免硬编码颜色，
