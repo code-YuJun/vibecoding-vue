@@ -70,3 +70,23 @@
 ```
 
 完成所有任务后归档 Change。
+
+## 案例
+
+```
+
+提问：/openspec-explore 我要新增一个联系人列表页面。请先了解当前 Vite 项目结构（目前还没有业务代码），并通过 Figma MCP 读取联系人列表页面的 UI 设计，UI 设计稿地址：https://www.figma.com/design/0Ki3Mk9TmqHxFLDYaos4wJ/-FREE--Contact-Page-Admin-Dashboard--Community-?node-id=0-17&t=ABhwJLhXv1WyS8gx-4、通过 Apifox MCP 读取联系人列表接口，分析需要哪些组件、数据结构和 API 调用。
+回答：...
+
+提问：/openspec-propose 
+回答：proposal.md（项目提案）、design.md（设计文档）、specs（规范文档）、tasks.md（任务清单）
+
+提问：/openspec-apply-change 开始实施任务
+回答：....
+
+提问：/openspec-sync-specs
+回答：
+
+提问：/openspec-archive-change 归档
+回答：
+```
