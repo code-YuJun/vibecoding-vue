@@ -1,10 +1,6 @@
-根据项目已配置的 OpenSpec Skills，你可以通过以下方式唤起 OpenSpec 的能力：
+## 唤起方式
 
-## 🚀 唤起方式
-
-### 方式一：使用命令前缀（推荐）
-
-通过 `/opsx:` 命令前缀来调用 OpenSpec 的各个能力：
+### 使用命令前缀
 
 | 命令              | 对应 Skill              | 用途                          |
 | ----------------- | ----------------------- | ----------------------------- |
@@ -22,30 +18,12 @@
 /opsx:explore add-user-management
 ```
 
-### 方式二：自然语言描述
-
-直接描述你的需求，AI 会自动识别并调用对应的 Skill：
+## SDD（Spec-Driven Development）工作流程
 
 ```
-我想新增一个用户管理功能
-```
-
-→ AI 会自动调用 `openspec-propose` 创建 Change
-
-```
-我需要实现用户管理功能
-```
-
-→ AI 会自动调用 `openspec-apply-change` 执行实现
-
----
-
-## 🔄 SDD（Spec-Driven Development）工作流程
-
-```
-探索 → 提议 → 实现 → 同步 → 归档
-  │       │       │       │       │
-  ▼       ▼       ▼       ▼       ▼
+ 探索         	       提议         实现          同步           归档
+  │       		│           │             │             │
+  ▼       		▼           ▼             ▼             ▼
 /opsx:explore → /opsx:propose → /opsx:apply → /opsx:sync → /opsx:archive
 ```
 
@@ -92,15 +70,3 @@
 ```
 
 完成所有任务后归档 Change。
-
----
-
-## 💡 使用建议
-
-如果你已经配置好了 SDD，建议按以下步骤开始：
-
-1. **先探索**：用 `/opsx:explore` 分析你要做的需求
-2. **创建提议**：用 `/opsx:propose <name>` 创建 Change
-3. **开始实现**：用 `/opsx:apply` 执行代码实现
-
-**立即尝试**：你可以直接告诉我想要实现的功能，或者输入 `/opsx:propose` 开始创建一个新的 Change！
