@@ -4,6 +4,7 @@ import { resolve } from 'path'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import { viteMockServe } from 'vite-plugin-mock'
 
 export default defineConfig({
   plugins: [
@@ -16,6 +17,10 @@ export default defineConfig({
     Components({
       resolvers: [ElementPlusResolver()],
       dts: 'src/components.d.ts',
+    }),
+    viteMockServe({
+      mockPath: 'mock',
+      enable: true,
     }),
   ],
   resolve: {

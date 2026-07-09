@@ -7,10 +7,15 @@ const request = axios.create({
 
 request.interceptors.response.use(
   (response) => {
-    return response.data
+    const res = response.data
+    if (res.code !== 0) {
+      ElMessage.error(res.msg || '请求失败')
+      return Promise.reject(new Error(res.msg || '请求失败'))
+    }
+    return res.data
   },
   (error) => {
-    console.error('Request error:', error)
+    ElMessage.error(error.message || '网络请求失败')
     return Promise.reject(error)
   }
 )
